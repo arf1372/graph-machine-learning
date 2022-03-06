@@ -1,12 +1,13 @@
 """Utility functions for working with graphs"""
 
+
 import networkx as nx
 
 
-def adjustency_graph(g: nx.Graph) -> nx.Graph:
+def incidence_graph(g: nx.Graph) -> nx.Graph:
     """Converts a graph to it's edge graph
 
-    An adjustency graph (edge graph) is a graph made by considering
+    An incidence graph (edge graph) is a graph made by considering
     each edge as a node, and each node as an edge.
 
     Args:
